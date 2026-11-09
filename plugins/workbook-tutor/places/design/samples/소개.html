@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한줄한줄 글쓰기 클래스</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: linear-gradient(180deg, #eef2ff 0%, #f5f3ff 50%, #ffffff 100%);
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+nav .logo { font-size: 20px; font-weight: 700; color: #4f46e5; }
+nav .btn-sm { background: linear-gradient(90deg, #6366f1, #8b5cf6); color: #fff; padding: 8px 18px; border-radius: 999px; font-size: 15px; }
+.hero {
+  margin-top: 8px;
+  padding: 56px 32px;
+  text-align: center;
+  color: #fff;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #3b82f6 100%);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+}
+.hero h1 { font-size: 34px; line-height: 1.35; margin-bottom: 14px; }
+.hero p { font-size: 17px; opacity: 0.92; margin-bottom: 28px; }
+.btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 14px 28px; border-radius: 14px; font-weight: 700; font-size: 17px; }
+.btn.main { background: linear-gradient(90deg, #f472b6, #fb923c); color: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
+.btn.ghost { background: rgba(255, 255, 255, 0.2); color: #fff; }
+section { padding: 56px 0 0; text-align: center; }
+h2 { font-size: 24px; color: #4338ca; margin-bottom: 8px; }
+.sec-sub { margin-bottom: 28px; color: #4b5563; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+.card .ico {
+  width: 56px; height: 56px; margin: 0 auto 14px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+}
+.card h3 { font-size: 19px; color: #4f46e5; margin-bottom: 8px; }
+.card p { font-size: 16px; color: #4b5563; }
+.review-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.review { background: #fff; border-radius: 24px; padding: 24px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15); text-align: left; }
+.review p { margin-bottom: 8px; }
+.review span { color: #6b7280; font-size: 15px; }
+.cta {
+  margin: 56px 0 0;
+  padding: 48px 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+.cta h2 { color: #fff; margin-bottom: 10px; }
+.cta p { margin-bottom: 24px; opacity: 0.92; }
+footer { text-align: center; padding: 32px 0 40px; color: #6b7280; font-size: 15px; }
+@media (max-width: 760px) {
+  .cards, .review-list { grid-template-columns: 1fr; }
+  .hero { padding: 40px 20px; border-radius: 24px; }
+  .hero h1 { font-size: 28px; }
+  section { padding-top: 40px; }
+  .btn { width: 100%; text-align: center; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo">한줄한줄</div>
+    <div class="btn-sm">수강 신청</div>
+  </nav>
+
+  <div class="hero">
+    <h1>🚀 혁신적인 솔루션으로<br>글쓰기를 한 단계 끌어올리세요</h1>
+    <p>한줄한줄 글쓰기 클래스와 함께라면 누구나 쉽고 빠르게 글쓰기 실력을 극대화할 수 있습니다.</p>
+    <div class="btns">
+      <span class="btn main">지금 바로 시작하기</span>
+      <span class="btn ghost">커리큘럼 보기</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>✨ 왜 한줄한줄일까요?</h2>
+    <p class="sec-sub">최고의 학습 경험을 위한 세 가지 핵심 가치</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico">⚡</div>
+        <h3>쉽고 빠른 학습</h3>
+        <p>검증된 학습 방법으로 누구나 빠르게 글쓰기 실력을 향상시킬 수 있어요.</p>
+      </div>
+      <div class="card">
+        <div class="ico">💡</div>
+        <h3>맞춤형 피드백</h3>
+        <p>수강생 한 분 한 분에게 최적화된 전문적인 피드백을 제공해 드려요.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🎯</div>
+        <h3>체계적인 커리큘럼</h3>
+        <p>기초부터 심화까지 단계별로 설계된 커리큘럼으로 목표를 달성하세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>💬 수강생들의 생생한 후기</h2>
+    <p class="sec-sub">이미 많은 분들이 만족하고 계세요</p>
+    <div class="review-list">
+      <div class="review">
+        <p>“혁신적인 수업 덕분에 글쓰기가 완전히 달라졌어요! 강력 추천합니다.”</p>
+        <span>수강생 김** 님</span>
+      </div>
+      <div class="review">
+        <p>“체계적인 커리큘럼으로 단기간에 큰 성장을 경험했습니다.”</p>
+        <span>수강생 이** 님</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>🌟 지금 바로 새로운 가능성을 발견하세요</h2>
+    <p>가을 학기 수강생을 모집하고 있어요. 한정된 인원만 받으니 서두르세요!</p>
+    <span class="btn main">무료 체험 신청하기</span>
+  </div>
+
+  <footer>© 2026 한줄한줄 글쓰기 클래스. All rights reserved.</footer>
+</div>
+</body>
+</html>
